@@ -1,28 +1,29 @@
-<h1>List Products</h1>
-  <%= form_tag products_path, :method=>"get" do %>
+<div class="container">
+  <h1>List Products</h1>
+  <%= form_tag products_path, class: "mb-2", :method=>"get" do %>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search" %>
   <% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Company</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
+  <table class="table table-dark table-bordered">
+    <thead>
       <tr>
-        <td><%= product.name %></td>
-        <td><%= product.company %></td>
-        <td><%= product.price %></td>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Company</th>
+        <th scope="col">Price</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.id %></td>
+          <td><%= product.name %></td>
+          <td><%= product.company %></td>
+          <td><%= product.price %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

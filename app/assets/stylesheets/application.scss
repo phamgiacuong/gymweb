@@ -9,9 +9,30 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
  */
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
+/*
+ *= require jquery-ui
+ */
+@import 'bootstrap';
+
+.logo{
+    height: 50px;
+}
+
+#carousel{
+    padding: 0;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 60px;
+}
+
+.carousel img{
+    height: 60vh;
+    width: 100vw;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
