@@ -15,12 +15,24 @@
  */
 @import 'bootstrap';
 
+#main{
+    min-height: 90vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.navbar{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
 .logo{
-    height: 50px;
+    height: 10vh;
 }
 
 #carousel{
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -28,11 +40,35 @@
 }
 
 .carousel img{
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+
+}
+
+@media screen and (max-width:576px){
+    .carousel img{
+        height: 40vw;
+    }
+}
+
+@media screen and (min-width:576px){
+    
+}
+
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:992px){
+    
+}
+
+@media screen and (min-width:1200px){
+    
+}
+
+@media screen and (min-width:1440px){
+    
 }
