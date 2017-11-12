@@ -12,6 +12,8 @@ gem 'rails', '~> 5.0.6'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'popper_js', '~> 1.12.3'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+# Use Font Awesome for Icons
+gem 'font-awesome-sass'
 # Use ActiveModel has_secure_password
 gem 'bcrypt',         '3.1.11'
 # Use sqlite3 as the database for Active Record
