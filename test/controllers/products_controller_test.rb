@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class ProductsControllerTest < ActionDispatch::IntegrationTest
-  test "should get new" do
-    get products_new_url
+class ProductsControllerTest < ActionController::TestCase
+  test "should get index" do
+    get :index
     assert_response :success
   end
 

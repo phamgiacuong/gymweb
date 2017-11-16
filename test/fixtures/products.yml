@@ -2,10 +2,8 @@
 
 one:
   name: MyString
-  company: MyString
-  price: 1
+  price: MyString
 
 two:
   name: MyString
-  company: MyString
-  price: 1
+  price: MyString
