@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gymweb</title>
+<head>
+    <title>SaleWebsite</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+<body>
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 text-right">
+        <h1 class="cart-text"><%= render 'layouts/cart_text' %></h1>
+      </div>
+    </div>
     <%= yield %>
-  </body>
+  </div>
+
+</body>
 </html>
